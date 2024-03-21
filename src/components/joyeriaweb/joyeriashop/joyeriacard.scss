@@ -1,0 +1,178 @@
+.global-container {
+  background-color: #ecfbdc
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px; /* Espaciado entre tarjetas */
+  justify-content: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+.basket-icon {
+  width: 40px;
+  margin-right: 10px;
+  filter: invert(10);
+}
+
+.total-quantity {
+  font-size: 20px; /* Adjust the font size as needed */
+  color: rgb(54, 81, 34);
+}
+
+.product-container {
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar horizontalmente en dispositivos móviles */
+  text-align: center; /* Centrar el texto horizontalmente */text-align: center; /* Centrar el texto horizontalmente */
+}
+
+.card-image {
+  width: 100%; /* La imagen ocupa el 100% del ancho de la tarjeta */
+  height: 350px; /* Tamaño específico para la altura */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px; /* Espaciado interno del texto */
+
+}
+
+h4, p {
+  margin: 0;
+  padding-top: 5px;
+  max-width: 350px;
+  font-family: system-ui;
+
+}
+
+.title-product {
+    font-weight: 100;
+    font-size: 25px;
+    color: rgb(76, 76, 76);
+}
+
+.title-description {
+  font-family: system-ui;
+  font-weight: 100;
+  font-size: 15px;
+  padding-top: 10px;
+  color: rgb(129, 129, 129);
+}
+
+.title-price {
+  font-weight: 200;
+  justify-items: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-jewerly {
+  padding: 10px 20px;
+  background-color: #a9c689;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+
+  &:hover {
+    background-color: #bcd69f;
+  }
+}
+.cart-container-shop {
+  background-color: #f8f8f8;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.cart-items-shop {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Ajusta el espaciado entre los elementos del carrito */
+}
+
+.product-container-shop {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden; /* Evita que los bordes se solapen con el contenido */
+  max-width: 200px; /* Ajusta el ancho máximo de cada elemento del carrito según sea necesario */
+}
+
+.card-image-shop {
+  width: 100%;
+  height: auto;
+}
+
+.text-container-shop {
+  padding: 10px;
+}
+
+.title-product {
+  margin: 0;
+  font-size: 16px;
+}
+
+.ul-shop{
+  display: flex;
+}
+
+.aboreto-regular {
+  font-family: 'Aboreto', system-ui;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 20px;
+  padding-left: 50px;
+}
+@media (max-width: 768px) {
+  .global-container {
+    background-color: #ecfbdc;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Ajustar el espaciado para dispositivos móviles */
+    justify-content: center;
+  }
+
+  .product-container {
+    max-width: 90%; /* Ajustar el ancho para dispositivos móviles */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente en dispositivos móviles */
+    text-align: center; /* Centrar el texto horizontalmente */
+  }
+
+  .card-image {
+    width: 100%;
+    max-width: 330px;
+    height: auto; /* Ajustar la altura automáticamente para dispositivos móviles */
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px; /* Espaciado interno del texto */
+    align-items: center; /* Centrar horizontalmente en dispositivos móviles */
+  }
+
+  h4, p {
+    margin: 0;
+    padding-top: 10px; /* Ajustar el espaciado superior para dispositivos móviles */
+    max-width: 330px;
+    font-family: system-ui;
+  }
+}

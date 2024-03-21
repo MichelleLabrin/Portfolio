@@ -1,0 +1,46 @@
+.title-practiceweb {
+  padding-left: 50px;
+  font-family: "Aboreto", system-ui;
+  text-align: center; /* Centra el texto en dispositivos móviles */
+}
+
+.square-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.square {
+  width: 25%;
+  height: 25%;
+  margin: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.square:hover {
+  transform: scale(1.1);
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 600px) {
+  .title-practiceweb {
+    padding-left: 0; /* Elimina el relleno izquierdo en dispositivos móviles */
+  }
+
+  .square-container {
+    flex-wrap: wrap; /* Utiliza flex-wrap para envolver los elementos en dispositivos pequeños */
+  }
+
+  .square {
+    width: 70%; /* Ajusta el ancho para ocupar el 80% del contenedor en dispositivos móviles */
+    margin: 10px auto; /* Alinea los elementos en el centro y agrega un pequeño margen entre ellos en dispositivos móviles */
+  }
+}

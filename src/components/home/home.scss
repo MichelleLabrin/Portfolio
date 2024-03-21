@@ -1,0 +1,45 @@
+.aboreto-regular {
+  font-family: "Aboreto", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 60px;
+}
+
+.home-container {
+  display: flex;
+}
+.left-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 250px;
+  padding-top: 50px;
+}
+
+.subtitle {
+  font-weight: 400;
+}
+.image-container__photo {
+  padding: 95px 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .home-container {
+    flex-direction: row;
+    flex-wrap: wrap;  }
+
+  .left-container {
+    width: 100%;
+    margin-right: 0px;
+    .title {
+      font-size: 30px;
+    }
+
+    .introduction {
+      font-size: 18px;
+    }
+  }
+
+  .image-container__photo {
+    padding: 15px 50px 0px; /* Ajusta el relleno de la foto en dispositivos móviles */
+  }
+}

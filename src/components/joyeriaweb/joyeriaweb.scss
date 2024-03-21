@@ -1,0 +1,110 @@
+.jewelry-container {
+  background-image: url('src/assets/fondojewerly.png');
+  background-size: cover; /* Ajusta el tamaño para cubrir el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  height: 90vh; /* Ajusta la altura al 100% de la ventana gráfica (viewport height) */
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+}
+.title-handmade {
+  padding-top: 40px;
+  padding-right: 40px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.aboreto-regular {
+  font-family: 'Aboreto', system-ui;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.title-jewerly {
+  font-size: 80px;
+  color: #cfff95;
+  padding-left: 50px;
+}
+.subtitle-jewerly {
+  font-size: 180px;
+  color: #cfff95;
+  padding-left: 50px;
+  margin-top: -60px;
+  margin-bottom: -35px;
+}
+.herr-von-muellerhoff-regular {
+  font-family: 'Herr Von Muellerhoff', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.description-jewerly {
+  font-size: 20px;
+  color: #ffffff;
+  padding-left: 90px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-shop {
+  background-color: #cfff95; /* Color de fondo */
+  color: black; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 20px 52px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor al pasar el ratón */
+  transition: background-color 0.3s ease; /* Transición suave de color de fondo */
+  margin: -27px 101px;
+}
+
+.btn-shop:hover {
+  background-color: white; /* Cambia el color de fondo al pasar el ratón */
+}
+
+@media screen and (max-width: 768px) {
+  .jewelry-container {
+    height: 100vh;
+  }
+
+  .title-jewerly,
+  .subtitle-jewerly,
+  .description-jewerly,
+  .btn-shop {
+    padding: 60px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .title-jewerly {
+    font-size: 50px;
+  }
+
+  .subtitle-jewerly {
+    font-size: 100px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+  }
+
+  .description-jewerly {
+    font-size: 14px;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-shop {
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+}

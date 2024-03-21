@@ -1,0 +1,28 @@
+.header{
+  &-deco{
+    border-color: red;
+    border-style: solid;
+  }
+
+  &-title{
+    font-size: 70px;
+  }
+}
+
+.container{
+  &-menu{
+    border-color: rgb(10, 17, 227);
+    border-style: solid;
+    display: flex;
+    justify-content: space-around;
+
+    &_one, &_two, &_three {
+      border-color: rgb(245, 228, 72);
+      border-style: solid;
+    }
+
+    &_img{
+      height: 100%;
+    }
+  }
+}
